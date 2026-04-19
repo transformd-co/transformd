@@ -1,0 +1,53 @@
+name: Bug report
+description: Something isn't working as expected
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug! Please fill out the sections below so we can reproduce.
+  - type: input
+    id: version
+    attributes:
+      label: Agent / server version
+      description: Run `transformd-agent --version`
+      placeholder: "v1.2.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install?
+      options:
+        - Native package (.deb / .rpm)
+        - Docker / Podman
+        - Kubernetes (Helm)
+        - install.sh script
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Output from `journalctl -u transformd-agent` or container logs. Redact secrets!
+      render: shell
+  - type: input
+    id: os
+    attributes:
+      label: OS / distro
+      placeholder: "Ubuntu 22.04 / RHEL 9 / Debian 12"
