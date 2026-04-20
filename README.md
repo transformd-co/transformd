@@ -2,7 +2,7 @@
 
 Customer-facing artifacts and issue tracker for **Transformd** — the AI-powered observability pipeline.
 
-> **Note**: Source code is private and lives elsewhere. This repository exists for:
+> **Note**: This repository exists for:
 > - 🐛 [Issue tracking](https://github.com/transformd-co/transformd/issues)
 > - 📦 [Release artifacts](https://github.com/transformd-co/transformd/releases) (binaries, `.deb`, `.rpm`, SBOMs)
 > - 🐳 [Container images](https://github.com/orgs/transformd-co/packages) (`ghcr.io/transformd-co/transformd`)
