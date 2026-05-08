@@ -12,7 +12,7 @@ Customer-facing artifacts and issue tracker for **Transformd** — the AI-powere
 ### Linux (native package — recommended)
 
 ```bash
-curl -sSL https://beta.transformd.co/install.sh | sudo TRANSFORMD_API_KEY=<your-key> bash
+curl -sSL https://transformd.co/install.sh | sudo TRANSFORMD_API_KEY=<your-key> bash
 ```
 
 ### Container
@@ -31,7 +31,7 @@ cosign verify ghcr.io/transformd-co/transformd:vX.Y.Z \
 
 ## Documentation
 
-Full docs: https://beta.transformd.co/docs
+Full docs: https://.transformd.co/docs
 
 ## Support
 
